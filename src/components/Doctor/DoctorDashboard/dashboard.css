@@ -1,0 +1,43 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .dashboard header {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .dashboard section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 48%;
+  }
+  
+  .dashboard .stats,
+  .dashboard .patients,
+  .dashboard .activity {
+    /* Customize styles for each section here */
+  }
+  
+  .dashboard .stats p,
+  .dashboard .patients li,
+  .dashboard .activity p {
+    margin-bottom: 5px;
+  }
+  
+  .dashboard .patients ul {
+    list-style: none;
+    padding: 0;
+  }
