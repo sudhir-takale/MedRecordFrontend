@@ -1,19 +1,15 @@
 import "./App.css";
-import Home1 from './components/Home/Home1';
-import Navbar from './components/Home/Navbar';
-import Header from './components/Home/Header';
-// import Dashboard from './components/Home/Dashboard'
-import Dashboard from './components/Doctor/DoctorDashboard/Dashboard';
 
-
+import { Login } from "./components/Forms/Login";
 
 function App() {
   return (
     <div>
-      <Dashboard/>
-      {/* <Header/>
-      <Navbar/>
-      <Home1/> */}
+      <switch>
+        <Route path="/login">
+          <Login />
+        </Route>
+      </switch>
     </div>
   );
 }
